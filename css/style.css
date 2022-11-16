@@ -180,6 +180,10 @@ b {
   height: 90vh;
 }
 
+.section {
+  min-height: 100vh;
+}
+
 /* Typed text for header */
 .typewriter-text {
   color: var(--color-secondary);
@@ -282,7 +286,7 @@ section h2 {
   top: 25vh;
   height: 50vh;
   background: var(--color-secondary);
-  opacity: 50%;
+  opacity: 40%;
   box-shadow: -4px 4px 8px black;
 }
 
@@ -434,6 +438,14 @@ section h2 {
   }
 }
 
+
+
+
+.process-number {
+  color: var(--color-secondary);
+  font-size: 3.2rem;
+  font-family: var(--font-header);
+}
 
 
 /* Responsive */

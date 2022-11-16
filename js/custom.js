@@ -8,7 +8,8 @@ var textArray = [
   "web design", 
   "seo",
   "web development",
-  "logos and branding",
+  // "logos and branding",
+  "application development",
   "web hosting"
 ];
 
