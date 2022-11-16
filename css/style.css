@@ -1,0 +1,616 @@
+* {
+  --color-primary: #1C2837;
+	--color-secondary: #F6BF54;
+	--color-light:#9C9C9C;
+  --color-potential-green: #56A069; 
+  --color-potential-teal: #C3FCF2;
+  --color-potential-blue: #00CAFF;
+  --color-potential-pink: #FF60B8;
+  --font-paragraph: 'Inter', serif;
+  --font-header: 'Red Hat Mono', monospace;
+  --font-logo: 'Roboto', sans-serif;
+  --font-cursive: 'Allura', cursive;
+  --aspect-ratio-desktop: calc(1550/887);
+  --aspect-ratio-mobile: calc(566/1087);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+}
+
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--color-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-header);
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: white;
+}
+
+.logo-icon {
+  height: 45px;
+  margin: 30px;
+  box-shadow: 4px, 4px, 4px, black;
+}
+
+header {
+  height: fit-content;
+}
+
+header h2 {
+  line-height: 100%;
+  margin: auto -.5vw;
+}
+
+header ul {
+  margin-bottom: 0;
+}
+
+.logo-font {
+  font-family: var(--font-logo);
+  font-weight: 300;
+}
+
+li {
+  list-style: none;
+}
+
+header li {
+  margin: 2vw;
+}
+
+.logo-font {
+  font-family: var(--font-logo);
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
+body {
+  margin: 0;
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, var(--color-primary) 100%);
+}
+
+/* background-color: #000000;
+background-image: linear-gradient(135deg, #000000 55%, #1c2837 100%); */
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  /* border: 1px solid transparent; */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  /* transition: border-color 0.25s; */
+}
+
+.btn-primary:hover {
+  box-shadow: -6px 6px 12px var(--color-secondary);
+  background-color:#000000;
+  color: var(--color-secondary);
+  /* background-color: var(--color-primary) !important; */
+  transition: color 1s;
+  transition: box-shadow 1s;
+  border: none;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-primary {
+  background-color: black;
+  font-family: var(--font-paragraph);
+  box-shadow: -4px 4px 8px var(--color-secondary);
+  border: none;
+  border-radius: 0;
+  transition: all 1s;
+  text-transform: uppercase;
+}
+
+b {
+  color: var(--color-secondary);
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+#hero {
+  height: 90vh;
+}
+
+/* Typed text for header */
+.typewriter-text {
+  color: var(--color-secondary);
+}
+
+h1.cursor::after {
+  height:4px;
+  width:13px;
+}
+
+.cursor::after {
+  content:'';
+  display:inline-block;
+  /* margin-left:3px; */
+  background-color:white;
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+
+#typewriter h1 {
+  padding-left: 15px;
+}
+
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+section h2 {
+  padding-bottom: 1rem;
+  border-bottom: solid 2px var(--color-secondary);
+}
+
+
+.img-desktop:hover, .img-mobile:hover {
+  cursor: pointer;
+}
+
+.img-desktop {
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: calc(1550/887);
+  height: auto;
+  position: relative;
+  left: 40px;
+  box-shadow: -4px 4px 12px black;
+}
+
+.img-mobile {
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: calc(566/1087);
+  position: relative;
+  right: 20px;
+  top: 50%;
+  height: 60%;
+  box-shadow: -4px 4px 8px -4px black;
+}
+
+.divider-secondary {
+  border-bottom: solid 2px var(--color-secondary);
+}
+
+#work span {
+  color: white;
+  border: solid 1px var(--color-secondary);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: black;
+  box-shadow: -4px 4px 8px black;
+  border-radius: 2px;
+  /* background-color: var(--color-primary); */
+}
+
+#work span:hover {
+  cursor: default;
+}
+
+
+/* Hamburger Menu */
+#menuToggle, #menuToggle input, #menuToggle a, #menuToggle input {
+  display: none;
+}
+
+
+.caption-bg-left {
+  position: relative;
+  right: 50%;
+  top: 25vh;
+  height: 50vh;
+  background: var(--color-secondary);
+  opacity: 50%;
+  box-shadow: -4px 4px 8px black;
+}
+
+.caption-text-container {
+  position: relative;
+  bottom: 25vh;
+  height: 50vh;
+}
+
+.caption-text-container h4 {
+  margin: auto;
+}
+
+@media screen and (max-width: 991px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  #menuToggle
+  {
+  right: 0;
+  display: block;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  top: 44px;
+  /* transform: translate(0, 15%); */
+  }
+
+  #menuToggle a
+  {
+  text-decoration: none;
+  /* color: #232323; */
+  transition: color 0.3s ease;
+  display: block;
+  color: var(--color-primary);
+  }
+
+  #menuToggle input
+  {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 3; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+  }
+
+  /*
+  * Just a quick hamburger
+  */
+  #menuToggle span
+  {
+  display: block;
+  width: 33px;
+  background-color: var(--color-secondary);
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 3px;
+  z-index: 2;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+  transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+  transform-origin: 0% 100%;
+  }
+
+  /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+
+ 
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background-color: var(--color-primary);
+  }
+
+  /*
+  * But let's hide the middle one.
+  */
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+  * Ohyeah and the last one should go the other direction
+  */
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+  transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+  #menu
+  {
+  position: absolute;
+  right: -50px;
+  width: 250px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: var(--color-secondary);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(90%, 0);
+  transition: all 0.6s ease;
+  z-index: 1;
+  }
+
+  #menu li
+  {
+  padding: 10px 0;
+  z-index: 1;
+  position: relative;
+  color: var(--color-primary);
+  font-weight: bold;
+  }
+
+  /*
+  * And let's slide it in from the left
+  */
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+}
+
+
+
+/* Responsive */
+/* Mobile screens and up */
+@media only screen and (min-width: 350px) {
+  h1 {
+    font-size: 42px;
+    }
+  .img-desktop, .img-mobile {
+    transform: translateX(-17px);
+  }
+}
+
+
+/* Small Screens and up */
+@media only screen and (min-width: 576px)  {
+  h1 {
+    font-size: 42px;
+    }
+  
+  h2 {
+    font-size: 36px;
+    }
+  
+  h3 {
+    font-size: 28px;
+    }
+  
+  h4 {
+    font-size: 26px;
+    font-weight: 600; }
+  
+  h5 {
+    font-size: 24px;
+    font-weight: 500; }
+  
+  h6 {
+    font-size: 18px;
+    font-weight: 500; }
+  
+  p {
+    font-weight: normal;
+    font-size: 14px;}
+}
+
+/* Intermediate small screen size for offset calc */
+
+/* Medium Screens and up */
+@media only screen and (min-width: 768px)  {
+
+  h1 {
+    font-size: 42px;
+    }
+  
+  h2 {
+    font-size: 36px;
+    }
+  
+  h3 {
+    font-size: 28px;
+    }
+  
+  h4 {
+    font-size: 26px;
+    font-weight: 600; }
+  
+  h5 {
+    font-size: 24px;
+    font-weight: 500; }
+  
+  h6 {
+    font-size: 18px;
+    font-weight: 500; }
+  
+  p {
+    font-weight: normal;
+    font-size: 14px;}
+}
+
+/* Large Screens and up */
+@media only screen and (min-width: 992px)  {
+
+  h1 {
+    font-size: 42px;
+    }
+  
+  h2 {
+    font-size: 36px;
+    }
+  
+  h3 {
+    font-size: 28px;
+    }
+  
+  h4 {
+    font-size: 26px;
+    font-weight: 600; }
+  
+  h5 {
+    font-size: 24px;
+    font-weight: 500; }
+  
+  h6 {
+    font-size: 18px;
+    font-weight: 500; }
+  
+  p {
+    font-weight: normal;
+    font-size: 14px;}
+
+}
+
+/* XL Screens and up */
+@media only screen and (min-width: 1200px)  {
+
+  h1 {
+    font-size: 48px;
+    }
+  
+  h2 {
+    font-size: 42px;
+    }
+  
+  h3 {
+    font-size: 28px;
+    }
+  
+  h4 {
+    font-size: 26px;
+    font-weight: 600; }
+  
+  h5 {
+    font-size: 24px;
+    font-weight: 500; }
+  
+  h6 {
+    font-size: 18px;
+    font-weight: 500; }
+  
+  p {
+    font-weight: normal;
+    font-size: 14px;}
+}
+
+/* XXL Screens and up */
+@media only screen and (min-width: 1400px)  {
+  
+  h1 {
+    font-size: 48px;
+    }
+  
+  h2 {
+    font-size: 42px;
+    }
+  
+  h3 {
+    font-size: 36px;
+    }
+  
+  h4 {
+    font-size: 28px;
+    font-weight: 600; }
+  
+  h5 {
+    font-size: 26px;
+    font-weight: 500; }
+  
+  h6 {
+    font-size: 24px;
+    font-weight: 500; }
+  
+  p, li {
+    font-weight: normal;
+    font-size: 18px;}
+  
+}
+
+/* XXXL Screens and up */
+@media only screen and (min-width: 1900px)  {
+}

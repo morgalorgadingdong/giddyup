@@ -1,0 +1,27 @@
+body {
+    z-index: 0;
+    position: relative;
+}
+
+body.is-preload:after {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #000000 0%, var(--color-primary) 100%);
+    z-index: 10000;
+    opacity: 1;
+    /* filter: blur(50px); */
+    transition: all 1.5s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    content: '';
+}
+
+body.is-preload-reveal:after {
+    opacity: 0;
+    filter: blur(0);
+    z-index: -1 !important;
+    /* transition: all 1.5s; */
+}
+
+
