@@ -166,9 +166,51 @@
     <section id="about">
 
     </section>
-    <section id="contact">
 
+    <section id="contact" class="col-12 d-flex justify-content-center section align-content-center">
+      <div class="col-12 col-md-10 col-xl-8 d-flex justify-content-center align-content-center flex-wrap animate my-5">
+        <h2 class="col-12 mb-5">contact</h2>
+        <div class="col-12 d-flex justify-content-center flex-wrap">
+          <h6 class="col-12 text-center">Ready to take your business to the next level?</h6>
+          <!-- <h6 class="col-12 text-center">Use the form below or shoot us an email at info@giddyupdigital.com and we’ll get back to you as soon as we can.</h6> -->
+        </div>
+        <div class="col-12 col-lg-6 justify-content-center text-center mt-5">
+          <form method="POST" netlify>
+            <div class="mb-4">
+              <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-4">
+              <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <!-- <div class="mb-4">
+              <select name="subject" type="text" class="form-control" placeholder="Subject" required>
+                <option value="New website"></option>
+                <option value="SEO"></option>
+                <option value=""></option>
+                <option value=""></option>
+
+              </select>
+            </div> -->
+            <div class="mb-4">
+              <textarea name="message" class="form-control" placeholder="Optional Message" rows="4"></textarea>
+            </div>
+            <div class="d-grid flexCenterH">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
+
+    <footer class="col-12 d-flex justify-content-center align-content-center flex-wrap">
+      <div class="col-12 d-flex justify-content-center p-5">
+        <img class="logo-footer col-6 col-lg-4" src="img/logo.png"/>
+      </div>
+      <p class="col-12 text-center">© giddyup digital 2022</p>
+
+
+    </footer>
+
     <script src="js/glide/dist/glide.min.js"></script>
     <script src="js/preload.js"></script>
     <script src="js/custom.js"></script>

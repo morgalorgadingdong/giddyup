@@ -626,3 +626,11 @@ section h2 {
 /* XXXL Screens and up */
 @media only screen and (min-width: 1900px)  {
 }
+
+
+
+
+footer {
+  background-color: rgb(0, 0, 0, 0.1)
+  
+}
