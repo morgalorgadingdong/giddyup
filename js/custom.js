@@ -1,7 +1,8 @@
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 var i = 0,
     a = 0,
-    isBackspacing = false
+    isBackspacing = false,
+    firstTime = true;
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
@@ -22,7 +23,7 @@ var speedForward = 100, //Typing Speed
 //Run the loop
 setTimeout(function() {
   typeWriter("typewriter", textArray);
-}, '1000')
+}, '2500')
 // typeWriter("typewriter", textArray);
 
 function typeWriter(id, ar) {
@@ -33,7 +34,10 @@ function typeWriter(id, ar) {
     eHeader = eHeader[0]
  //Header element
     // let eParagraph = element.children("p"); //Subheader element
-  
+  if (firstTime) {
+    firstTime = false
+    isBackspacing = true
+  }
   // Determine if animation should be typing or backspacing
   if (!isBackspacing) { 
     // If full string hasn't yet been typed out, continue typing
@@ -63,3 +67,15 @@ function typeWriter(id, ar) {
     }
   }
 }
+
+
+
+const backToTop = document.getElementById('back-to-top')
+
+document.body.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.opacity = '0';
+  }
+})

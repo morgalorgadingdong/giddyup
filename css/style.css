@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .logo-icon {
-  height: 45px;
-  margin: 30px;
+  height: 40px;
+  margin: 30px 20px;
   box-shadow: 4px, 4px, 4px, black;
 }
 
@@ -74,6 +74,21 @@ header ul {
 
 li {
   list-style: none;
+  transition: all 1s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+a:hover li {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+header nav ul a {
+  transition: all 1s;
 }
 
 header li {
@@ -286,7 +301,7 @@ section h2 {
   top: 25vh;
   height: 50vh;
   background: var(--color-secondary);
-  opacity: 40%;
+  opacity: 20%;
   box-shadow: -4px 4px 8px black;
 }
 
@@ -476,7 +491,7 @@ section h2 {
   
   h4 {
     font-size: 26px;
-    font-weight: 600; }
+    font-weight: 400; }
   
   h5 {
     font-size: 24px;
@@ -510,7 +525,7 @@ section h2 {
   
   h4 {
     font-size: 26px;
-    font-weight: 600; }
+    font-weight: 400; }
   
   h5 {
     font-size: 24px;
@@ -542,7 +557,7 @@ section h2 {
   
   h4 {
     font-size: 26px;
-    font-weight: 600; }
+    font-weight: 400; }
   
   h5 {
     font-size: 24px;
@@ -575,7 +590,7 @@ section h2 {
   
   h4 {
     font-size: 26px;
-    font-weight: 600; }
+    font-weight: 400; }
   
   h5 {
     font-size: 24px;
@@ -607,7 +622,7 @@ section h2 {
   
   h4 {
     font-size: 28px;
-    font-weight: 600; }
+    font-weight: 400; }
   
   h5 {
     font-size: 26px;
@@ -633,4 +648,67 @@ section h2 {
 footer {
   background-color: rgb(0, 0, 0, 0.1)
   
+}
+
+/* back-to-to */
+#back-to-top {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.back-to-top a {
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  width: 50px;
+  height: 40px;
+  margin: 0px;
+  font-size: 18px;
+  background: black;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 999; 
+  box-shadow: -2px 2px 4px var(--color-secondary);}
+  .back-to-top a:hover {
+    color: var(--color-secondary);
+    box-shadow: -4px 4px 8px var(--color-secondary);
+  text-decoration: none; }
+  .back-to-top a:focus {
+    color: var(--color-secondary); }
+
+
+  /* width */
+::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0);
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background-color: var(--color-primary); */
+  opacity: 0;
+  /* background: var(--color-primary-dark); */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-light);
+  /* background: var(--color-primary-light); */
+}
+
+
+.seo {
+  visibility: hidden;
+}
+
+
+#hero h1 {
+  line-height: calc();
 }
