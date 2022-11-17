@@ -276,8 +276,8 @@ section h2 {
 #work span {
   color: white;
   border: solid 1px var(--color-secondary);
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
   background-color: black;
   box-shadow: -4px 4px 8px black;
   border-radius: 2px;
@@ -426,6 +426,7 @@ section h2 {
   padding: 50px;
   padding-top: 125px;
   background: var(--color-secondary);
+  opacity: 0.7;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -442,6 +443,7 @@ section h2 {
   position: relative;
   color: var(--color-primary);
   font-weight: bold;
+  opacity: 1;
   }
 
   /*
@@ -465,13 +467,17 @@ section h2 {
 
 /* Responsive */
 /* Mobile screens and up */
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 200px) {
   h1 {
-    font-size: 42px;
+    font-size: 36px;
     }
   .img-desktop, .img-mobile {
     transform: translateX(-17px);
   }
+  #hero {
+    padding: 0;
+  }
+
 }
 
 
@@ -510,6 +516,11 @@ section h2 {
 
 /* Medium Screens and up */
 @media only screen and (min-width: 768px)  {
+  #work span {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
 
   h1 {
     font-size: 42px;
@@ -542,7 +553,10 @@ section h2 {
 
 /* Large Screens and up */
 @media only screen and (min-width: 992px)  {
-
+  #work span {
+    padding: 1rem;
+    margin: 1rem;
+  }
   h1 {
     font-size: 42px;
     }
