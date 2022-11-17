@@ -12,6 +12,7 @@
   --font-cursive: 'Allura', cursive;
   --aspect-ratio-desktop: calc(1550/887);
   --aspect-ratio-mobile: calc(566/1087);
+  --caption-bg-left-size: 80vh;
 }
 
 html, body {
@@ -298,8 +299,8 @@ section h2 {
 .caption-bg-left {
   position: relative;
   right: 50%;
-  top: 25vh;
-  height: 50vh;
+  top: calc(var(--caption-bg-left-size)/2);
+  height: var(--caption-bg-left-size);
   background: var(--color-secondary);
   opacity: 20%;
   box-shadow: -4px 4px 8px black;
@@ -307,8 +308,8 @@ section h2 {
 
 .caption-text-container {
   position: relative;
-  bottom: 25vh;
-  height: 50vh;
+  bottom: calc(var(--caption-bg-left-size)/2);
+  height: var(--caption-bg-left-size);
 }
 
 .caption-text-container h4 {
@@ -468,6 +469,11 @@ section h2 {
 /* Responsive */
 /* Mobile screens and up */
 @media only screen and (min-width: 200px) {
+  
+  * {
+    --caption-bg-left-size: 65vh;
+  }
+
   h1 {
     font-size: 36px;
     }
@@ -478,11 +484,21 @@ section h2 {
     padding: 0;
   }
 
+  #motto h4 {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0;
+  }
+
 }
 
 
 /* Small Screens and up */
 @media only screen and (min-width: 576px)  {
+  * {
+    --caption-bg-left-size: 60vh;
+  }
+  
   h1 {
     font-size: 42px;
     }
@@ -510,12 +526,22 @@ section h2 {
   p {
     font-weight: normal;
     font-size: 14px;}
+
+    #motto h4 {
+      font-size: 26px;
+      font-weight: 300;
+      padding: 0;
+    }
 }
 
 /* Intermediate small screen size for offset calc */
 
 /* Medium Screens and up */
 @media only screen and (min-width: 768px)  {
+  * {
+    --caption-bg-left-size: 50vh;
+  }
+
   #work span {
     padding: 0.5rem;
     margin: 0.5rem;
@@ -557,6 +583,13 @@ section h2 {
     padding: 1rem;
     margin: 1rem;
   }
+
+  #motto h4 {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0;
+  }
+
   h1 {
     font-size: 42px;
     }
