@@ -43,4 +43,6 @@ const observer = new IntersectionObserver((entries) => {
   })
 })
 const animateElements = document.querySelectorAll('.animate')
+// animateElements.append(document.querySelectorAll('animate-top'))
+console.log(animateElements)
 animateElements.forEach((el) => observer.observe(el));

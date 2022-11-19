@@ -49,9 +49,13 @@ h1, h2, h3, h4, h5, h6, p, li {
   color: white;
 }
 
+#navlogo-container {
+  padding: 30px 0;
+}
+
 .logo-icon {
   height: 40px;
-  margin: 30px 20px;
+  margin: auto 20px;
   box-shadow: 4px, 4px, 4px, black;
 }
 
@@ -76,6 +80,10 @@ header ul {
 li {
   list-style: none;
   transition: all 1s;
+}
+
+li.active {
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 a:hover {
@@ -125,6 +133,19 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   font-weight: 300;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h5 {
+  font-weight: 300;
+}
+
+em {
+  color: var(--color-light);
+  text-transform: none;
 }
 
 .card {
@@ -177,6 +198,7 @@ button:focus-visible {
 
 b {
   color: var(--color-secondary);
+  font-weight: normal;
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -272,6 +294,10 @@ section h2 {
 
 .divider-secondary {
   border-bottom: solid 2px var(--color-secondary);
+}
+
+.divider-white {
+  border-bottom: solid 2px white;
 }
 
 #work span {
@@ -517,7 +543,7 @@ section h2 {
   
   h5 {
     font-size: 24px;
-    font-weight: 500; }
+     }
   
   h6 {
     font-size: 18px;
@@ -566,7 +592,7 @@ section h2 {
   
   h5 {
     font-size: 24px;
-    font-weight: 500; }
+     }
   
   h6 {
     font-size: 18px;
@@ -608,7 +634,7 @@ section h2 {
   
   h5 {
     font-size: 24px;
-    font-weight: 500; }
+     }
   
   h6 {
     font-size: 18px;
@@ -641,7 +667,7 @@ section h2 {
   
   h5 {
     font-size: 24px;
-    font-weight: 500; }
+     }
   
   h6 {
     font-size: 18px;
@@ -672,8 +698,7 @@ section h2 {
     font-weight: 400; }
   
   h5 {
-    font-size: 26px;
-    font-weight: 500; }
+    font-size: 26px;}
   
   h6 {
     font-size: 24px;
@@ -758,4 +783,82 @@ footer {
 
 #hero h1 {
   line-height: calc();
+}
+
+
+
+/* ABOUT PAGE */
+#values, #definition, #introduction {
+  height: 100vh;
+}
+
+#about-hero-container {
+  height: 80vh;
+}
+#about-hero {
+  background-color: rgb(246, 191, 84, 0.2);
+  max-height: 40vh;
+  z-index: 0;
+}
+
+#about-hero h4 {
+  line-height: 2.5rem;
+}
+
+#about-hero * {
+  margin: auto 0;
+}
+
+.vertical-line {
+  width: 2px;
+  border-right: solid white 1px;
+  height: 100%
+}
+
+@media only screen and (max-width: 777px) {
+  #about-hero {
+    max-height: fit-content;
+  }
+  #about-hero * {
+    padding-left: 15px;
+  }
+  #about-hero .divider-white {
+    margin-left: 15px;
+  }
+  #about-hero h1 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+
+  }
+  #about-hero h4 {
+    width: 100%;
+    display: flex;
+  }
+}
+
+
+/* #introduction {
+  height: 100vh;
+} */
+
+#introduction .img-container {
+  aspect-ratio: 1/1;
+  height: fit-content;
+  padding: 0;
+  margin: auto 0;
+}
+
+#introduction .intro-text-container {
+  margin: auto 0;
+  height: fit-content;
+}
+
+#introduction .img-container img {
+  aspect-ratio: 1/1;
+  border-radius: 5%;
+}
+
+#definition h2 {
+  border-bottom: none;
 }

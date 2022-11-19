@@ -40,11 +40,11 @@
   </head>
   <body id="the-body" class="is-preload">
     <header id="top" class="col-12 d-flex justify-content-center">
-      <nav class="col-12 col-xl-11 mt-xl-3 d-flex justify-content-between">
-        <div class="d-flex justify-content-start align-content-center">
+      <nav class="col-12 col-xl-11 mt-xl-3 d-flex justify-content-between align-content-center">
+        <a id="navlogo-container" class="d-flex justify-content-start align-content-center" href='index.html'>
           <img class="logo-icon" src="img/logo-icon.png"/>
           <h2 class="logo-font">/ giddyup</h2>
-        </div>
+        </a>
         <div id="menuToggle" class="px-3 d-lg-none position-absolute">
           <input type="checkbox" />
           <span class=""></span>
@@ -52,15 +52,16 @@
           <span class=""></span>
           <ul id="menu" class="">
             <a href="#work"><li>work</li></a>
-            <a href="#process"><li>process</li></a>
-            <!-- <a href="#work"><li>about</li></a> -->
+            <!-- <a href="#process"><li>process</li></a> -->
+            <a href="about.html"><li>about</li></a>
             <a href="#contact"><li>contact</li></a>
           </ul>
         </div>
         <ul class="d-lg-flex d-none justify-content-between align-items-center">
           <a href="#work"><li>work</li></a>
-            <a href="#process"><li>process</li></a>
+            <!-- <a href="#process"><li>process</li></a> -->
             <!-- <a href="#work"><li>about</li></a> -->
+            <a href="about.html"><li>about</li></a>
             <a href="#contact"><li>contact</li></a>
         </ul> 
       </nav>
@@ -78,8 +79,8 @@
       <div class="col-12 col-md-10 col-xl-8 d-flex justify-content-center flex-wrap" >
         <h2 class="col-12 mb-5">recent work</h2>
         <div class="col-12 d-flex justify-content-center work-img-container my-lg-5 my-3">
-          <div class="img-desktop col-12 col-md-11 animate" style="background-image: url('img/madaesthetics-desktop.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
-          <div class="img-mobile col-2 animate-delay animate" style="background-image: url('img/madaesthetics-mobile.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
+          <div class="img-desktop col-12 col-md-11 animate animate-left" style="background-image: url('img/madaesthetics-desktop.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
+          <div class="img-mobile col-2 animate-delay animate animate-left" style="background-image: url('img/madaesthetics-mobile.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
         </div>
         <div class="col-12 my-lg-5 my-3 d-flex justify-content-start flex-wrap">
           <span>website design</span>
@@ -92,8 +93,8 @@
         <div class="col-12 my-5"></div>
 
         <div class="col-12 d-flex justify-content-center work-img-container my-lg-5 my-3">
-          <div class="img-desktop col-12 col-md-11 animate" style="background-image: url('img/otb-desktop.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
-          <div class="img-mobile col-2 animate-delay animate" style="background-image: url('img/otb-mobile.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
+          <div class="img-desktop col-12 col-md-11 animate animate-left" style="background-image: url('img/otb-desktop.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
+          <div class="img-mobile col-2 animate-delay animate animate-left" style="background-image: url('img/otb-mobile.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
         </div>
         <div class="col-12 my-lg-5 my-3 d-flex justify-content-start flex-wrap">
           <span>website design</span>
@@ -106,8 +107,8 @@
         <div class="col-12 my-5"></div>
 
         <div class="col-12 d-flex justify-content-center work-img-container my-lg-5 my-3">
-          <div class="img-desktop col-12 col-md-11 animate" style="background-image: url('img/ftre-desktop.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
-          <div class="img-mobile col-2 animate-delay animate" style="background-image: url('img/ftre-mobile.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
+          <div class="img-desktop col-12 col-md-11 animate animate-left" style="background-image: url('img/ftre-desktop.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
+          <div class="img-mobile col-2 animate-delay animate animate-left" style="background-image: url('img/ftre-mobile.png')" onclick="location.href='https://www.madaesthetics.co'"></div>
         </div>
         <div class="col-12 my-lg-5 my-3 d-flex justify-content-start flex-wrap">
           <span>website design</span>
@@ -121,47 +122,45 @@
         <div class="col-12 my-5"></div>
       </div>
     </section>
-    <section id="motto" class="col-12 d-flex justify-content-center align-content-center flex-wrap  animate">
+    <section id="motto" class="col-12 d-flex justify-content-center align-content-center flex-wrap  animate animate-left">
       <div class="caption-bg-left col-12"></div>
       <div class="col-12 d-flex justify-content-center align-content-center caption-text-container">
         <!-- <h4 class="col-12 col-md-10 col-lg-6">Creating a beautiful website for your business shouldn't cost thousands of dollars or be a full time job. Giddyup exists to help small businesses leverage the power of technology to accomplish their goals, without breaking the bank or monopolizing their time.</h4> -->
-        <h4 class="col-12 col-md-10 col-lg-8 col-xl-6">"Giddyup was very easy to work with. Morgan (giddyup owner) has a wide knowledge and understanding of coding and went above and beyond for our website. He was readily available to speak with us through the whole project. We trusted giddyup with our formatting, layouts and design and could not be happier with the end result." <br><br>-Buzz & Will, OTB Fabrication</h4>
+        <!-- <h4 class="col-12 col-md-10 col-lg-8 col-xl-6">"Giddyup was very easy to work with. Morgan (giddyup owner) has a wide knowledge and understanding of coding and went above and beyond for our website. He was readily available to speak with us through the whole project. We trusted giddyup with our formatting, layouts and design and could not be happier with the end result." <br><br>-Buzz & Will, OTB Fabrication</h4> -->
+        <!-- <h4 class="col-12 col-md-10 col-lg-8 col-xl-6">"Giddyup is incredible to work with. There is nothing to speak on where things could have been done better - a truly fantastic experience all round... We trusted giddyup with our formatting, layouts and design and could not be happier with the end result." <br><br>-Buzz & Will, OTB Fabrication</h4> -->
+        <h4 class="col-12 col-md-10 col-lg-8 col-xl-6">"Morgan (giddyup owner) is incredible to work with, he has a wide knowledge and understanding of coding and went above and beyond for our website. We trusted giddyup with our formatting, layouts and design and could not be happier with the end result." <br><br>-Buzz & Will, OTB Fabrication</h4>
       </div>
     </section>
 
     <section id="process" class="col-12 d-flex justify-content-center align-content-center flex-wrap section">
-      <div class="col-12 col-md-10 col-xl-8 d-flex justify-content-center align-content-start flex-wrap animate my-5">
+      <div class="col-12 col-md-10 col-xl-8 d-flex justify-content-center align-content-start flex-wrap animate animate-left my-5">
         <h2 class="col-12 mb-5">process</h2>
-        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate animate-left">
           <h4 class="col-12 process-number">1.</h4>
           <h4 class="col-12">consultation</h4>
           <p class="col-12">We start our web design process by first determining your busines needs, objectives and goals that need to be met for your website. Based on that, we develop an appropriate project plan and realistic timeline.</p>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate animate-left">
           <h4 class="col-12 process-number">2.</h4>
           <h4 class="col-12">design</h4>
           <p class="col-12">In the design phase, we create a tailor made design for your website based on our previous discussions. We work closley with you in this phase to insure the design meets your needs and expectations</p>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate animate-left">
           <h4 class="col-12 process-number">3.</h4>
           <h4 class="col-12">develop</h4>
           <p class="col-12">Once you have signed off on the design, we begin the process of building your app or website. We place a heavy emphasis on responsiveness and SEO, to insure your design not only translates well onto any device, but will be easy to find via search engines.</p>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-start align-content-start flex-wrap animate-delay animate animate-left">
           <h4 class="col-12 process-number">4.</h4>
           <h4 class="col-12">launch</h4>
           <p class="col-12">The live launch of your site or app can be an exciting and stressful time. That's why we provide full monitoring and support during the launch period (90 days): if any issue should arise within the launch period, we will fix it free of charge.</p>
         </div>
       </div>
-    </section>
-
-    <section id="about">
-
-    </section>
+    </section> 
 
     <section id="contact" class="col-12 d-flex justify-content-center section align-content-center">
-      <div class="col-12 col-md-10 col-xl-8 d-flex justify-content-center align-content-center flex-wrap animate my-5">
-        <h2 class="col-12 mb-5">contact</h2>
+      <div class="col-12 col-md-10 col-xl-8 d-flex justify-content-center align-content-center flex-wrap animate animate-left my-5">
+        <!-- <h2 class="col-12 mb-5">contact</h2> -->
         <div class="col-12 d-flex justify-content-center flex-wrap">
           <h6 class="col-12 text-center">Ready to establish an intentional digital presence for your business?</h6>
           <h6 class="col-12 text-center">Drop us a line below and we'll get back to you asap.</h6>
@@ -198,7 +197,7 @@
 
     <footer class="col-12 d-flex justify-content-center align-content-center flex-wrap">
       <div class="col-12 d-flex justify-content-center p-5">
-        <img class="logo-footer col-6 col-lg-2" src="img/logo.png"/>
+        <a href='index.html'><img class="logo-footer col-6 col-lg-2" src="img/logo.png"/></a>
       </div>
       <p class="col-12 text-center">© giddyup digital 2022</p>
 
