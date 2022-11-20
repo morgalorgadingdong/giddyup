@@ -324,7 +324,7 @@ section h2 {
 
 .caption-bg-left {
   position: relative;
-  right: 50%;
+  right: 40%;
   top: calc(var(--caption-bg-left-size)/2);
   height: var(--caption-bg-left-size);
   background: var(--color-secondary);
