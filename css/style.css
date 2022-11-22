@@ -201,6 +201,10 @@ b {
   font-weight: normal;
 }
 
+/* #menu b {
+  color: var(--color-secondary);
+} */
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -388,13 +392,13 @@ section h2 {
   {
   display: block;
   width: 33px;
-  background-color: var(--color-secondary);
-  height: 4px;
+  background-color: white;
+  height: 2px;
   margin-bottom: 5px;
   position: relative;
   border-radius: 3px;
   z-index: 2;
-  transform-origin: 4px 0px;
+  transform-origin: 10px -2px;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -420,7 +424,7 @@ section h2 {
   {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
   }
 
   /*
@@ -452,8 +456,8 @@ section h2 {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: var(--color-secondary);
-  opacity: 0.7;
+  background: var(--color-primary);
+  opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -469,6 +473,7 @@ section h2 {
   z-index: 1;
   position: relative;
   color: var(--color-primary);
+  color: white;
   font-weight: bold;
   opacity: 1;
   }
