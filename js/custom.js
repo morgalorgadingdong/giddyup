@@ -10,7 +10,7 @@ var textArray = [
   "seo",
   "web development",
   // "logos and branding",
-  "application development",
+  "app development",
   "web hosting"
 ];
 
