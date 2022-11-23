@@ -890,8 +890,12 @@ footer {
   height: 80vh;
 }
 
-#madaesthetics-mockup, #madaesthetics-objective, #madaesthetics-store, #madaesthetics-bootcamp, #madaesthetics-feedback {
-  min-height: 100vh;
+#madaesthetics-mockup {
+  min-height: 80vh;
+}
+
+#madaesthetics-objective, #madaesthetics-store, #madaesthetics-bootcamp, #madaesthetics-feedback {
+  min-height: 80vh;
 } 
 
 #madaesthetics-hero > div, #madaesthetics-mockup > div, #madaesthetics-objective > div, #madaesthetics-store > div, #madaesthetics-bootcamp > div, #madaesthetics-feedback > div {
