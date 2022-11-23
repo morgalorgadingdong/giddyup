@@ -101,6 +101,10 @@
   transition-delay: 400ms;
 }
 
+.animate-delay:nth-child(6) {
+  transition-delay: 500ms;
+}
+
 
 .animate-delay-1 {
   transition-delay: 100ms;

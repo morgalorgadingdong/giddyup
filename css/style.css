@@ -886,11 +886,11 @@ footer {
 
 /* madaesthetics case study */
 #madaesthetics-hero {
-  height: 90vh;
+  height: 80vh;
 }
 
 #madaesthetics-mockup, #madaesthetics-objective, #madaesthetics-store, #madaesthetics-bootcamp, #madaesthetics-feedback {
-  height: 100vh;
+  min-height: 100vh;
 } 
 
 #madaesthetics-hero > div, #madaesthetics-mockup > div, #madaesthetics-objective > div, #madaesthetics-store > div, #madaesthetics-bootcamp > div, #madaesthetics-feedback > div {
@@ -916,4 +916,11 @@ img {
   border-top: solid 1px var(--color-secondary);
   border-bottom: solid 1px var(--color-secondary);
   line-height: 150%;
+}
+
+.star {
+  aspect-ratio: 1/1;
+  padding: 0;
+  width: 16.6%;
+  max-width: 50px;
 }
