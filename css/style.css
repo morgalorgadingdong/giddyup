@@ -56,8 +56,8 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .logo-icon {
-  height: 40px;
-  margin: auto 20px;
+  height: 30px;
+  margin: auto 13px;
   box-shadow: 4px, 4px, 4px, black;
 }
 
@@ -292,9 +292,9 @@ section h2 {
   background-size: cover;
   aspect-ratio: calc(566/1087);
   position: relative;
-  right: 20px;
-  top: 50%;
-  height: 60%;
+  right: 10px;
+  top: 25%;
+  height: 85%;
   box-shadow: -4px 4px 8px -4px black;
 }
 
@@ -346,6 +346,10 @@ section h2 {
 
 .caption-text-container h4 {
   margin: auto;
+}
+
+#contact h6 {
+  padding: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -565,6 +569,12 @@ section h2 {
       font-weight: 300;
       padding: 0;
     }
+
+    .logo-icon {
+      height: 40px;
+      margin: auto 20px;
+      /* box-shadow: 4px, 4px, 4px, black; */
+    }
 }
 
 /* Intermediate small screen size for offset calc */
@@ -608,6 +618,12 @@ section h2 {
   p {
     font-weight: normal;
     font-size: 14px;}
+
+    .img-mobile {
+      height: 60%;
+      right: 20px;
+      top: 50%;
+    }
 }
 
 /* Large Screens and up */
