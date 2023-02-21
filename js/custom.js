@@ -9,9 +9,11 @@ var textArray = [
   "web design", 
   "seo",
   "web development",
+  "web hosting",
   // "logos and branding",
-  "app development",
-  "web hosting"
+  "Content strategy",
+  "Copywriting",
+  
 ];
 
 // Speed (in milliseconds) of typing.
