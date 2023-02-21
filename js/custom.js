@@ -11,8 +11,8 @@ var textArray = [
   "web development",
   "web hosting",
   // "logos and branding",
-  "Content strategy",
-  "Copywriting",
+  "content strategy",
+  "copywriting",
   
 ];
 
