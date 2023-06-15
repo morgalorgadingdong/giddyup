@@ -906,13 +906,17 @@ footer {
   height: 80vh;
 }
 
-#madaesthetics-mockup {
-  min-height: 80vh;
+#madaesthetics-mockup > a {
+  height: fit-content;
 }
 
-#madaesthetics-objective, #madaesthetics-store, #madaesthetics-bootcamp, #madaesthetics-feedback {
+/* #madaesthetics-mockup {
   min-height: 80vh;
-} 
+} */
+
+/* #madaesthetics-objective, #madaesthetics-store, #madaesthetics-bootcamp, #madaesthetics-feedback {
+  min-height: 80vh;
+}  */
 
 #madaesthetics-hero > div, #madaesthetics-mockup > div, #madaesthetics-objective > div, #madaesthetics-store > div, #madaesthetics-bootcamp > div, #madaesthetics-feedback > div {
   margin: auto 0;
@@ -945,3 +949,16 @@ img {
   width: 16.6%;
   max-width: 50px;
 }
+
+
+#work div span {
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  position: relative;
+}
+
+/* #work .work-img-container:hover + div span {
+  transform: translateY(0%);
+  opacity: 1;
+} */
