@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="giddyup digital is a small website design and development company, specializing in helping small businesses and entreprenuers establish intentional and cohesive online presence using web design and development best practices." />
+    <meta name="keywords" content="website design, website developer, custom websites, web application development, seo, consulting" />
+    <meta name="author" content="GiddyUp Digital" />
+    <meta property='og:image' content='images/new-logo-2.png' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo-favicon-navy.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    
+    <!-- Custom server ver -->
+    <!-- <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="/js/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="/js/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/preload.css" /> -->
+
+    <!-- Front end only version -->
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="js/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="js/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/preload.css" />
+    <link rel="stylesheet" href="css/font-awesome/all.min.css" />
+    <!-- Google tag (gtag.js) -->
+    
+    <title>giddyup digital</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HG3STBQEK7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HG3STBQEK7');
+  </script>
+  <body id="the-body" class="is-preload">
+    <header id="top" class="col-12 d-flex justify-content-center">
+      <nav class="col-12 col-xl-11 mt-xl-3 d-flex justify-content-between align-content-center">
+        <a id="navlogo-container" class="d-flex justify-content-start align-content-center" href='index.html'>
+          <img class="logo-icon" src="img/logo-icon.png"/>
+          <h2 class="logo-font">/ giddyup</h2>
+        </a>
+        <div id="menuToggle" class="px-3 d-lg-none position-absolute">
+          <input type="checkbox" />
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <ul id="menu" class="">
+            <a href="portfolio.html"><li>portfolio</li></a>
+            <!-- <a href="#process"><li>process</li></a> -->
+            <!-- <a href="blog.html"><li>blog</li></a> -->
+            <a href="about.html"><li>about</li></a>
+            <a href="#contact"><li>contact</li></a>
+          </ul>
+        </div>
+        <ul class="d-lg-flex d-none justify-content-between align-items-center">
+          <a href="portfolio.html"><li>portfolio</li></a>
+            <!-- <a href="#process"><li>process</li></a> -->
+            <!-- <a href="#work"><li>about</li></a> -->
+            <!-- <a href="blog.html"><li>blog</li></a> -->
+            <a href="about.html"><li>about</li></a>
+            <a href="#contact"><li>contact</li></a>
+        </ul> 
+      </nav>
+    </header>
+    <section id="" class="col-12 d-flex justify-content-center">
+        <div class="col-12 col-md-10 col-xl-8 d-flex justify-content-center flex-wrap" >
+          <div class="col-8 my-lg-5 my-3 stack-container">
+            <div onclick="bringToFront(event)" class="img-desktop col-12 col-md-11 animate animate-left three-d stack-one" style="background-image: url('img/oba-stack-1.png')"></div>
+            <div onclick="bringToFront(event)" class="img-desktop col-12 col-md-11 animate animate-left three-d stack-two" style="background-image: url('img/oba-stack-2.png')"></div>
+            <div onclick="bringToFront(event)" class="img-desktop col-12 col-md-11 animate animate-left three-d stack-three" style="background-image: url('img/oba-stack-5.png')"></div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="col-12 d-flex justify-content-center align-content-center flex-wrap">
+      <div class="col-12 d-flex justify-content-center p-5">
+        <img class="logo-footer col-6 col-lg-2" src="img/logo.png"/>
+      </div>
+      <p class="col-12 text-center">© giddyup digital 2022</p>
+    </footer>
+
+    <div id="back-to-top" class="back-to-top">
+      <a href="#top"> <i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <script src="js/glide/dist/glide.min.js"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>
+
+<style>
+    * {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .three-d {
+        transform: rotate3d(-2, -2, -1, 30deg);
+    }
+
+.stack-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.stack-container:hover .stack-one {
+    transform: translateX(10%) translateY(-10%) rotate3d(2, 2, 1, -30deg);
+ 
+}
+
+.stack-container:hover .stack-two {
+    transform: translateX(0%) translateY(10%) rotate3d(2, 2, 1, -30deg);
+}
+
+.stack-container:hover .stack-three {
+    transform: translateX(-10%) translateY(30%) rotate3d(2, 2, 1, -30deg); 
+
+}
+
+/* .stack-one:hover {
+    z-index: 100;
+    transform: rotate3d(0, 0, 0, 0deg) translate(0) scale(1.1) !important;
+} */
+
+/* .stack-two:hover {
+    transform: rotate3d(0, 0, 0, 0deg) translate(0) scale(1.1) !important;
+    z-index: 100;
+    
+}
+
+.stack-three:hover {
+    transform: rotate3d(0, 0, 0, 0deg) translate(0) scale(1.1) !important;
+    z-index: 100;
+    
+} */
+
+.stack-default {
+    transform: rotate3d(-2, -2, -1, 30deg);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.stack-one {
+    position: relative;
+    z-index: 3;
+    left: 5%;
+}
+
+    .stack-two {
+    position: relative;
+    top: -25%;
+    left: 0%;
+    z-index: 2;
+    }
+
+    .stack-three {
+    position: relative;
+    top: -50%;
+    left: -5%;
+    z-index: 1;
+    }
+
+    .stack-one.scale-up {
+    transform: rotate3d(0, 0, 0, 0deg) scale(1.2) !important;
+    z-index: 100 !important;
+}
+
+.stack-two.scale-up {
+    transform: rotate3d(0, 0, 0, 0deg) scale(1.2) !important;
+    z-index: 100 !important;
+}
+
+.stack-three.scale-up {
+    transform: rotate3d(0, 0, 0, 0deg) scale(1.2) !important;
+    z-index: 100 !important;
+}
+
+.stack-default {
+    transform: rotate3d(-2, -2, -1, 30deg);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    opacity: 0.7; /* Add default opacity value here */
+}
+
+/* New class to make the stack opaque when it's active */
+.stack-opaque {
+    opacity: 0.7;
+}
+</style>
+
+
+<script>
+    let stackContainer = document.querySelector('.stack-container');
+let stackArray = stackContainer.children;
+let currentFront = null;
+
+function bringToFront(e) {
+    if (e.target === currentFront) {
+        currentFront.classList.remove('scale-up');
+        currentFront = null;
+        resetDefaultOpacity();
+        return;
+    }
+
+    if (currentFront) {
+        currentFront.classList.remove('scale-up');
+    }
+
+    e.target.classList.add('scale-up');
+    currentFront = e.target;
+
+    for (let i = 0; i < stackArray.length; i++) {
+        if (stackArray[i] !== currentFront) {
+            stackArray[i].style.opacity = '0.7'; // Set opacity for non-clicked stacks
+        } else {
+            stackArray[i].style.opacity = '1'; // Set the clicked stack to full opacity
+        }
+    }
+}
+
+function resetDefaultOpacity() {
+    for (let i = 0; i < stackArray.length; i++) {
+        stackArray[i].classList.remove('scale-up');
+        stackArray[i].style.opacity = '1'; // Reset opacity for all stacks to default (1)
+    }
+}
+
+// Event listener for mouseleave on the container
+stackContainer.addEventListener('mouseleave', function() {
+    resetDefaultOpacity();
+    currentFront = null;
+});
+
+</script>
